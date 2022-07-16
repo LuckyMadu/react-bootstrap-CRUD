@@ -10,9 +10,7 @@ import ItemForm from "../../components/ItemForm";
 import SecondItemForm from "../../components/SecondItemForm";
 
 const SecondPage = () => {
-    const [item, setItem] = useState({
-        name: "",
-    });
+    const [name, setName] = useState('');
 
     const add = (e) => {
         e.preventDefault();

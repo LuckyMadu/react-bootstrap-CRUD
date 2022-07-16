@@ -18,7 +18,7 @@ const TopNavbar = () => {
                         navbarScroll
                     >
                         <Link to="/" className='nav-link'>Home</Link>
-                        <Link to="/add" className='nav-link'>Branch</Link>
+                        <Link to="/add" className='nav-link'>Buffet</Link>
                     </Nav>
                     <Form className="d-flex">
                         <Form.Control
