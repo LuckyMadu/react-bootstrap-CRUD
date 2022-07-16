@@ -1,36 +1,18 @@
 import ListGroup from 'react-bootstrap/ListGroup';
-import Badge from 'react-bootstrap/Badge';
+import { Button } from 'react-bootstrap';
 
-const ItemList = () => {
+const ItemList = ({ item, deleteMeal }) => {
     return (
-        <ListGroup as="ol" numbered>
+        <ListGroup as="ol">
             <ListGroup.Item
                 as="li"
                 className="d-flex justify-content-between align-items-center"
             >
                 <div className="ms-2 me-auto">
-                    <div className="fw-bold">List Number 01</div>
+                    <div className="fw-bold">{item.meal_plan_name}</div>
                 </div>
-                <Badge bg="primary" pill>
-                    Update
-                </Badge>
-                <Badge bg="danger" pill>
-                    Delete
-                </Badge>
-            </ListGroup.Item>
-            <ListGroup.Item
-                as="li"
-                className="d-flex justify-content-between align-items-center"
-            >
-                <div className="ms-2 me-auto">
-                    <div className="fw-bold">List Number 02</div>
-                </div>
-                <Badge bg="primary" pill>
-                    Update
-                </Badge> {' '}
-                <Badge bg="danger" pill>
-                    Delete
-                </Badge>
+                <Button variant="success">Update</Button> &nbsp;
+                <Button variant="danger" onClick={() => deleteMeal(item._id)}>Delete</Button>
             </ListGroup.Item>
         </ListGroup>
     );

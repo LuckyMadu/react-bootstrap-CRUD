@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 const SecondItemForm = () => {
     return (
         <Container>
-            <h2>Add Foods</h2>
+            <h2>Create Branch</h2>
             {/* <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
