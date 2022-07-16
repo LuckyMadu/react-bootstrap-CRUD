@@ -7,7 +7,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const TopNavbar = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg">
             <Container fluid>
                 <Navbar.Brand href="#">FatBellie Foods</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />

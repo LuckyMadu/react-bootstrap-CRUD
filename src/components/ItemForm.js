@@ -28,9 +28,11 @@ const ItemForm = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
-                <Button variant="primary" type="submit" onClick={handleSubmit}>
-                    Submit
-                </Button>
+                <div className="d-grid gap-2">
+                    <Button variant="primary" size="lg">
+                        SUBMIT
+                    </Button>
+                </div>
             </Form>
         </Container>
     );
