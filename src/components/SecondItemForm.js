@@ -1,18 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import makeToast from "../utils/toaster";
 
-const ItemForm = () => {
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        makeToast()
-    }
+const SecondItemForm = () => {
     return (
         <Container>
-            <h2>Create Branch</h2>
-            <Form>
+            <h2>Add Foods</h2>
+            {/* <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
@@ -28,12 +22,12 @@ const ItemForm = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
-                <Button variant="primary" type="submit" onClick={handleSubmit}>
+                <Button variant="primary" type="submit">
                     Submit
                 </Button>
-            </Form>
+            </Form> */}
         </Container>
     );
 }
 
-export default ItemForm;
+export default SecondItemForm;

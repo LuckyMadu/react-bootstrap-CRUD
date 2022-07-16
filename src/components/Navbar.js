@@ -9,7 +9,7 @@ const TopNavbar = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">Foodie Site</Navbar.Brand>
+                <Navbar.Brand href="#">FatBellie Foods</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -18,7 +18,7 @@ const TopNavbar = () => {
                         navbarScroll
                     >
                         <Link to="/" className='nav-link'>Home</Link>
-                        <Link to="/add" className='nav-link'>Add Items</Link>
+                        <Link to="/add" className='nav-link'>Branch</Link>
                     </Nav>
                     <Form className="d-flex">
                         <Form.Control

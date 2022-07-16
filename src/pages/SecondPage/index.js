@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import makeToast from "../../utils/toaster";
 import ItemForm from "../../components/ItemForm";
+import SecondItemForm from "../../components/SecondItemForm";
 
 const SecondPage = () => {
     const [item, setItem] = useState({
@@ -22,11 +23,11 @@ const SecondPage = () => {
         <>
             <Container>
                 <Row>
-                    <Col>
+                    <Col >
                         <ItemForm />
                     </Col>
                     <Col>
-                        <ItemForm />
+                        <SecondItemForm />
                     </Col>
                 </Row>
             </Container>
